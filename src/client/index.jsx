@@ -6,6 +6,7 @@ import ReactDOM from "react-dom"
 
 function App() {
     return (
+        <>
     <header>
             <img className="logo" src="./images/brightlogo.png" alt="logo"/>
             <nav>
@@ -17,6 +18,7 @@ function App() {
             </nav>
             <a className="cta" href="#"><button>Help</button></a>
         </header>
+        <div className="background"></div></>
     )
 }
 
