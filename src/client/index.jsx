@@ -1,11 +1,13 @@
 import React from "react"
 import ReactDOM from "react-dom"
-//import logo from './images/brightlogo.png';
+
+
+
 
 function App() {
     return (
     <header>
-            {/*<img src={logo} alt="logo"/>*/}
+            <img className="logo" src="./images/brightlogo.png" alt="logo"/>
             <nav>
                 <ul className="nav_links">
                     <li><a href="#">Service</a></li>
