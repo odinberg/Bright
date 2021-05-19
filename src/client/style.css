@@ -4,14 +4,22 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+    background-color: #174A5B;
 }
 
-li, a, button{
+li, a{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
+    text-decoration: none;
+}
+
+button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #2C2A29;
     text-decoration: none;
 }
 
@@ -43,13 +51,13 @@ header{
 }
 
 .nav_links li a:hover{
-    color: #0088a9;
+    color: #C3DC93;
 }
 
 button{
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
+    background-color: #C3DC93;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -57,5 +65,5 @@ button{
 }
 
 button:hover{
-    background-color: rgba(0,136,169,0.7);
+    background-color: #00966C;
 }
