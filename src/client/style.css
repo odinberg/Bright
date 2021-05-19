@@ -10,7 +10,12 @@
 .background {
     background-color: #FBF6ED;
     
-    
+}
+
+#root {
+    display: grid;
+    grid-template-rows: 0.5fr 5.1fr;
+
 }
 
 li, a{
