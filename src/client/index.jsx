@@ -3,7 +3,6 @@ import ReactDOM from "react-dom"
 
 
 
-
 function App() {
     return (
         <>
@@ -18,7 +17,8 @@ function App() {
             </nav>
             <a className="cta" href="#"><button>Help</button></a>
         </header>
-        <div className="background"></div></>
+        <div className="background"></div>
+        </>
     )
 }
 
