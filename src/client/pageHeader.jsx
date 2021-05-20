@@ -1,10 +1,13 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-export function PageHeader() {
-    return <header>
+
+export function PageHeader(){
+
+    return(
+    <header>
         <Link to="/">
-        <img className="logo" src="./images/brightlogo.png" alt="logo"/>
+            <img className="logo" src="./images/brightlogo.png" alt="logo"/>
         </Link>
         <nav>
             <ul className="nav_links">
@@ -16,5 +19,5 @@ export function PageHeader() {
         <Link to="/help">
             <button>Help</button>
         </Link>
-    </header>;
-}
+    </header>
+)}
