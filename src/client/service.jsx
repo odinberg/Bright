@@ -1,5 +1,11 @@
 import React from "react";
 
+
 export function Service() {
-    return <div>Service page component</div>;
+    return <main>Service page component
+        <div>
+        <img src='./images/sunbellSmart.png'></img>
+        Sunbell Smart
+        </div>
+    </main>
 }

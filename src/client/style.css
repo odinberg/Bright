@@ -89,3 +89,9 @@ button:hover{
 .service-container{
     border: 1px solid black;
 }
+
+.sunbellDiv{
+    width: 100px;
+    height: 100px;
+    stroke: black 1px;
+}
