@@ -86,6 +86,94 @@ button:hover{
     margin: 10px;
 }
 
-.service-container{
+.startPlusDiv{
+    height: 250px;
+    width: 250px;
     border: 1px solid black;
+    border-radius: 35px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.startPlusImg{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    margin-left: -20%;
+    margin-top: -25%;
+}
+
+.homeDiv{
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 35px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.homeImg{
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+}
+
+.sunbellSmartDiv{
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 35px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.sunbellSmartImg{
+    width: 140%;
+    object-fit: cover;
+    margin-left: -15%;
+    margin-top: -30%;
+}
+
+.moveSmartDiv{
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 35px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.moveSmartImg{
+
+    width: 140%;
+    object-fit: cover;
+    margin-left: -15%;
+    margin-top: -15%;
+}
+
+.sunTurtleDiv{
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 35px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.sunTurtleImg{
+    width: 140%;
+    object-fit: cover;
+    margin-left: -20%;
+    
 }
