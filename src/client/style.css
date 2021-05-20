@@ -85,3 +85,7 @@ button:hover{
 .help-container h3{
     margin: 10px;
 }
+
+.service-container{
+    border: 1px solid black;
+}
