@@ -8,7 +8,7 @@ import home from "./images/home.png"
 
 export function Service() {
     return (
-        <div className="procuctContainer">
+        <div className="productContainer">
             <div className="sunbellSmartDiv">
                 <img className="sunbellSmartImg" src={sunbellSmart} alt="startplus" />
                 <h2 className="sunbellTxt">Sunbell</h2>
