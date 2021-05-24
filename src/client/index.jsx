@@ -1,12 +1,11 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import {PageHeader} from "./pageHeader";
-import {Home} from "./home";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Learn} from "./learn";
 import {Service} from "./service";
 import {Help} from "./help";
-import {Scan} from "./scan";
+
 
 
 function App() {
@@ -15,13 +14,10 @@ function App() {
             <PageHeader/>
                 <Switch>
                     <Route exact path="/">
-                        <Home />
+                        <Service />
                     </Route>
                     <Route exact path="/learn">
                         <Learn />
-                    </Route>
-                    <Route exact path="/scan">
-                        <Scan />
                     </Route>
                     <Route exact path="/service">
                         <Service />

@@ -13,8 +13,7 @@ export function PageHeader(){
         <nav>
             <ul className="nav_links">
                 <li><Link to="/service">Service</Link></li>
-                <li><Link to="/learn">Learn</Link></li>
-                <li><Link to="/scan">Scan</Link></li>
+                <li><Link to="/learn">Learn</Link></li> 
             </ul>
         </nav>
         <Link to="/help">
