@@ -33698,28 +33698,11 @@ function PageHeader() {
     to: "/service"
   }, "Service")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/learn"
-  }, "Learn")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/scan"
-  }, "Scan")))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+  }, "Learn")))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/help"
   }, /*#__PURE__*/_react.default.createElement("button", null, "Help")));
 }
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","./images/brightlogo.png":"images/brightlogo.png"}],"home.jsx":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Home = Home;
-
-var _react = _interopRequireDefault(require("react"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Home() {
-  return /*#__PURE__*/_react.default.createElement("div", null, "Home page component");
-}
-},{"react":"../../node_modules/react/index.js"}],"youtubeEmbed.jsx":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","./images/brightlogo.png":"images/brightlogo.png"}],"youtubeEmbed.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33868,21 +33851,6 @@ function Help() {
     className: "help-container"
   }, /*#__PURE__*/_react.default.createElement("h1", null, "BRIGHT Products AS"), /*#__PURE__*/_react.default.createElement("h3", null, "Address: Holbergs gate 19, 0166 Oslo Norway"), /*#__PURE__*/_react.default.createElement("h3", null, "Phone: +47 902 14 423"), /*#__PURE__*/_react.default.createElement("h3", null, "Email: info@bright-products.com"));
 }
-},{"react":"../../node_modules/react/index.js"}],"scan.jsx":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Scan = Scan;
-
-var _react = _interopRequireDefault(require("react"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Scan() {
-  return /*#__PURE__*/_react.default.createElement("div", null, "Scan page component");
-}
 },{"react":"../../node_modules/react/index.js"}],"index.jsx":[function(require,module,exports) {
 "use strict";
 
@@ -33892,8 +33860,6 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _pageHeader = require("./pageHeader");
 
-var _home = require("./home");
-
 var _reactRouterDom = require("react-router-dom");
 
 var _learn = require("./learn");
@@ -33902,21 +33868,16 @@ var _service = require("./service");
 
 var _help = require("./help");
 
-var _scan = require("./scan");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
   return /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement(_pageHeader.PageHeader, null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/"
-  }, /*#__PURE__*/_react.default.createElement(_home.Home, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+  }, /*#__PURE__*/_react.default.createElement(_service.Service, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/learn"
   }, /*#__PURE__*/_react.default.createElement(_learn.Learn, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    exact: true,
-    path: "/scan"
-  }, /*#__PURE__*/_react.default.createElement(_scan.Scan, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/service"
   }, /*#__PURE__*/_react.default.createElement(_service.Service, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
@@ -33926,7 +33887,7 @@ function App() {
 }
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root"));
-},{"react":"../../node_modules/react/index.js","react-dom":"../../node_modules/react-dom/index.js","./pageHeader":"pageHeader.jsx","./home":"home.jsx","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","./learn":"learn.jsx","./service":"service.jsx","./help":"help.jsx","./scan":"scan.jsx"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-dom":"../../node_modules/react-dom/index.js","./pageHeader":"pageHeader.jsx","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","./learn":"learn.jsx","./service":"service.jsx","./help":"help.jsx"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

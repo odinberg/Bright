@@ -33,7 +33,7 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 30px 5%;
     background-color: #174A5B;
 }
 
@@ -41,7 +41,11 @@ header{
     width: 100px;
     height: 50px;
     cursor: pointer;
-    margin-right: auto;
+    position: absolute;
+    left: 20px;
+    margin-left: 20px;
+    margin-top: -25px;
+    
 }
 
 .nav_links{
