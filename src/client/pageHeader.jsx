@@ -8,7 +8,8 @@ export function PageHeader(){
     return(
     <header>
         <Link to="/">
-            <img className="logo" src={logo} alt="logo"/>
+        {/*<img className="logo" src={logo} alt="logo"/>*/}
+            <h1 className="logo">BR!GHT</h1>
         </Link>
         <nav>
             <ul className="nav_links">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 
 *{
     box-sizing: border-box;
@@ -14,7 +14,7 @@ html{
 
 
 li, a{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Arial", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
@@ -22,7 +22,7 @@ li, a{
 }
 
 button{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Arial", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #2C2A29;
@@ -37,7 +37,7 @@ header{
     background-color: #174A5B;
 }
 
-.logo{
+/*.logo{
     width: 100px;
     height: 50px;
     cursor: pointer;
@@ -46,6 +46,15 @@ header{
     margin-left: 20px;
     margin-top: -25px;
     
+}*/
+
+.logo{
+    font-family: "Arial", sans-serif;
+    color: #C3DC93;
+    position: absolute;
+    left: 20px;
+    margin-left: 20px;
+    margin-top: -20px;
 }
 
 .nav_links{
@@ -197,22 +206,27 @@ button:hover{
 }
 
 .sunbellTxt{
+    font-family: "Arial", sans-serif;
     margin-top: -25%;
     margin-left: 25%;
 }
 .moveSmartTxt{
+    font-family: "Arial", sans-serif;
     margin-top: -5%;
     margin-left: 30%;
 }
 .startPlusTxt{
+    font-family: "Arial", sans-serif;
     margin-top: -30%;
     margin-left: 30%;
 }
 .sunTurtleTxt{
+    font-family: "Arial", sans-serif;
     margin-top: 8%;
     margin-left: 35%;
 }
 .homeTxt{
+    font-family: "Arial", sans-serif;
     margin-top: 5%;
     margin-left: 40%;
 }
