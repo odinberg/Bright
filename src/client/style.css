@@ -241,7 +241,14 @@ button:hover{
 .video-settings iframe {
     left: 0;
     top: 0;
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     position: absolute;
 }
+
+.h1 {
+    font-family: "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
