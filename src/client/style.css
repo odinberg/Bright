@@ -92,32 +92,38 @@ button:hover{
 
 .startPlusDiv{
     height: 250px;
-    width: 250px;
+    width: 240px;
     border: 1px solid black;
     border-radius: 35px;
     display: inline-block;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 15px;
+    margin-top: 12px;
     overflow: hidden;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
 }
 
 .startPlusImg{
     height: 350px;
     width: 350px;
     object-fit: cover;
-    margin-left: -20%;
-    margin-top: -25%;
+    margin-left: -25%;
+    margin-top: -30%;
 }
 
 .homeDiv{
     height: 250px;
-    width: 250px;
+    width: 240px;
     border: 1px solid black;
     border-radius: 35px;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 12px;
     margin-top: 10px;
     overflow: hidden;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
 }
 
 .homeImg{
@@ -129,13 +135,16 @@ button:hover{
 
 .sunbellSmartDiv{
     height: 250px;
-    width: 250px;
+    width: 240px;
     border: 1px solid black;
     border-radius: 35px;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 12px;
     margin-top: 10px;
     overflow: hidden;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
 }
 
 .sunbellSmartImg{
@@ -147,13 +156,16 @@ button:hover{
 
 .moveSmartDiv{
     height: 250px;
-    width: 250px;
+    width: 240px;
     border: 1px solid black;
     border-radius: 35px;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 12px;
     margin-top: 10px;
     overflow: hidden;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
 }
 
 .moveSmartImg{
@@ -166,13 +178,16 @@ button:hover{
 
 .sunTurtleDiv{
     height: 250px;
-    width: 250px;
+    width: 240px;
     border: 1px solid black;
     border-radius: 35px;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 12px;
     margin-top: 10px;
     overflow: hidden;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
 }
 
 .sunTurtleImg{
@@ -183,24 +198,23 @@ button:hover{
 
 .sunbellTxt{
     margin-top: -25%;
-    margin-left: 35%;
+    margin-left: 25%;
 }
 .moveSmartTxt{
     margin-top: -5%;
-    margin-left: 25%;
+    margin-left: 30%;
 }
 .startPlusTxt{
     margin-top: -30%;
     margin-left: 30%;
 }
 .sunTurtleTxt{
-    margin-left: 30%;
     margin-top: 8%;
+    margin-left: 35%;
 }
 .homeTxt{
     margin-top: 5%;
-    margin-left: 35%;
-
+    margin-left: 40%;
 }
 
 .video-settings {
@@ -208,12 +222,12 @@ button:hover{
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
-  }
-  
-  .video-settings iframe {
+}
+
+.video-settings iframe {
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     position: absolute;
-  }
+}
