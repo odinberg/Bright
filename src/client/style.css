@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 
 *{
     box-sizing: border-box;
@@ -14,7 +14,7 @@ html{
 
 
 li, a{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Arial", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
@@ -22,7 +22,7 @@ li, a{
 }
 
 button{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Arial", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #2C2A29;
@@ -37,7 +37,7 @@ header{
     background-color: #174A5B;
 }
 
-.logo{
+/*.logo{
     width: 100px;
     height: 50px;
     cursor: pointer;
@@ -46,6 +46,15 @@ header{
     margin-left: 20px;
     margin-top: -25px;
     
+}*/
+
+.logo{
+    font-family: "Arial", sans-serif;
+    color: #C3DC93;
+    position: absolute;
+    left: 20px;
+    margin-left: 20px;
+    margin-top: -20px;
 }
 
 .nav_links{
@@ -92,32 +101,38 @@ button:hover{
 
 .startPlusDiv{
     height: 250px;
-    width: 250px;
+    width: 240px;
     border: 1px solid black;
     border-radius: 35px;
     display: inline-block;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 15px;
+    margin-top: 12px;
     overflow: hidden;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
 }
 
 .startPlusImg{
     height: 350px;
     width: 350px;
     object-fit: cover;
-    margin-left: -20%;
-    margin-top: -25%;
+    margin-left: -25%;
+    margin-top: -30%;
 }
 
 .homeDiv{
     height: 250px;
-    width: 250px;
+    width: 240px;
     border: 1px solid black;
     border-radius: 35px;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 12px;
     margin-top: 10px;
     overflow: hidden;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
 }
 
 .homeImg{
@@ -129,13 +144,16 @@ button:hover{
 
 .sunbellSmartDiv{
     height: 250px;
-    width: 250px;
+    width: 240px;
     border: 1px solid black;
     border-radius: 35px;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 12px;
     margin-top: 10px;
     overflow: hidden;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
 }
 
 .sunbellSmartImg{
@@ -147,13 +165,16 @@ button:hover{
 
 .moveSmartDiv{
     height: 250px;
-    width: 250px;
+    width: 240px;
     border: 1px solid black;
     border-radius: 35px;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 12px;
     margin-top: 10px;
     overflow: hidden;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
 }
 
 .moveSmartImg{
@@ -166,42 +187,48 @@ button:hover{
 
 .sunTurtleDiv{
     height: 250px;
-    width: 250px;
+    width: 240px;
     border: 1px solid black;
     border-radius: 35px;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 12px;
     margin-top: 10px;
     overflow: hidden;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
 }
 
 .sunTurtleImg{
     width: 140%;
     object-fit: cover;
     margin-left: -20%;
-    
 }
 
 .sunbellTxt{
+    font-family: "Arial", sans-serif;
     margin-top: -25%;
-    margin-left: 35%;
-}
-.moveSmartTxt{
-    margin-top: -5%;
     margin-left: 25%;
 }
+.moveSmartTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: -5%;
+    margin-left: 30%;
+}
 .startPlusTxt{
+    font-family: "Arial", sans-serif;
     margin-top: -30%;
     margin-left: 30%;
 }
 .sunTurtleTxt{
-    margin-left: 30%;
+    font-family: "Arial", sans-serif;
     margin-top: 8%;
+    margin-left: 35%;
 }
 .homeTxt{
+    font-family: "Arial", sans-serif;
     margin-top: 5%;
-    margin-left: 35%;
-
+    margin-left: 40%;
 }
 
 .video-settings {
@@ -209,19 +236,12 @@ button:hover{
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
-  }
-  
-  .video-settings iframe {
+}
+
+.video-settings iframe {
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     position: absolute;
-  }
-
-  .backBtn{
-      background-color: red;
-      height: 30px;
-      width: 40px;
-  }
-
+}
