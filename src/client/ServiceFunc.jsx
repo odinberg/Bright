@@ -7,10 +7,10 @@ import { Submit } from "./submit";
 
 export const defaultData = {
   productType: "",
-  part: "",
+  partType: "",
 };
 export const steps = [
-  { id: "productData" },
+  { id: "product" },
   { id: "part" },
   { id: "receipt" },
   { id: "submit" },
@@ -26,7 +26,7 @@ export const ServiceFunc = () => {
   const props = { serviceData, setServiceData, navigation };
 
   switch (step.id) {
-    case "productData":
+    case "product":
       return <Service {...props} />;
     case "part":
       return <ServiceParts {...props} />;
