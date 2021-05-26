@@ -6,7 +6,7 @@ import { Receipt } from "./receipt";
 import { Submit } from "./submit";
 
 export const defaultData = {
-  product: "",
+  productType: "",
   part: "",
 };
 export const steps = [

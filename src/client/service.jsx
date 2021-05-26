@@ -2,14 +2,20 @@ import React from "react";
 import { Products } from "./Products";
 
 export const Service = ({ serviceData, setServiceData, navigation }) => {
-  console.log(serviceData);
+  const { productType } = serviceData;
 
-  const { productData } = serviceData;
+  console.log(productType);
+  console.log(navigation);
 
   return (
     <div className="productContainer">
       {Products.map((product) => (
-        <div key={product.idx} className={product.css}>
+        <div
+          name={productType}
+          key={product.idx}
+          className={product.css}
+          onClick={() => navigation.next()}
+        >
           <img
             key={product.idx}
             src={product.image}
