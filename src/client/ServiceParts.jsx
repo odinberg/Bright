@@ -9,6 +9,11 @@ export const ServiceParts = ({ serviceData, setServiceData, navigation }) => {
   return (
     <>
     <h3>Pick the part you have to switch out</h3>
+    
+    <div className="backBtn" onClick={() => navigation.previous()}>
+      <img className="backBtnImg" src={backBtnImg} alt="back"/>
+    </div>
+
     <div className="partsContainer">
       {Parts.map((part) => (
         <div
@@ -24,9 +29,7 @@ export const ServiceParts = ({ serviceData, setServiceData, navigation }) => {
       ))}
       
     </div>
-    <div className="backBtn" onClick={() => navigation.previous()}>
-    <img className="backBtnImg" src={backBtnImg} alt="back"/>
-      </div>
+    
     </>
   );
 };

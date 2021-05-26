@@ -10,6 +10,7 @@ export const Receipt = ({ serviceData }) => {
   return (
     <Container>
       <h3>your receipt</h3>
+      
       <RenderAccordion
         summary="Products"
         details={[
