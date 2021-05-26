@@ -16,7 +16,7 @@ export const Parts = [
     image: battery,
     css: "styleParts",
     imageCss: "batteryImg",
-    textCss: "partsTxt",
+    textCss: "batteryTxt",
   },
   {
     idz: 2,
@@ -24,7 +24,7 @@ export const Parts = [
     image: lightAndGooseneck,
     css: "styleParts",
     imageCss: "lightAndGooseneckImg",
-    textCss: "partsTxt",
+    textCss: "lightAndGooseneckTxt",
   },
   {
     idz: 3,
@@ -32,7 +32,7 @@ export const Parts = [
     image: lightUnit,
     css: "styleParts",
     imageCss: "lightUnitImg",
-    textCss: "partsTxt",
+    textCss: "lightUnitTxt",
   },
   {
     idz: 4,
@@ -40,7 +40,7 @@ export const Parts = [
     image: PCBA,
     css: "styleParts",
     imageCss: "PCBAImg",
-    textCss: "partsTxt",
+    textCss: "PCBATxt",
   },
   {
     idz: 5,
@@ -48,7 +48,7 @@ export const Parts = [
     image: powerPlugCover,
     css: "styleParts",
     imageCss: "powerPlugCoverImg",
-    textCss: "partsTxt",
+    textCss: "powerplugCoverTxt",
   },
   {
     idz: 6,
@@ -56,7 +56,7 @@ export const Parts = [
     image: screw,
     css: "styleParts",
     imageCss: "screwImg",
-    textCss: "partsTxt",
+    textCss: "screwTxt",
   },
   {
     idz: 7,
@@ -64,7 +64,7 @@ export const Parts = [
     image: powerSwitchCover,
     css: "styleParts",
     imageCss: "powerSwitchCoverImg",
-    textCss: "partsTxt",
+    textCss: "powerSwitchCoverTxt",
   },
   {
     idz: 8,
@@ -72,7 +72,7 @@ export const Parts = [
     image: solarCable,
     css: "styleParts",
     imageCss: "solarCableImg",
-    textCss: "partsTxt"
+    textCss: "solarCableTxt"
   },
   {
     idz: 9,
@@ -80,6 +80,6 @@ export const Parts = [
     image: solarPanel,
     css: "styleParts",
     imageCss: "solarPanelImg",
-    textCss: "partsTxt",
+    textCss: "solarPanelTxt",
   },
 ];

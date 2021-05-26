@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Parts } from "./Parts";
+import backBtnImg from "./images/backBtn.png";
 
 export const ServiceParts = ({ serviceData, setServiceData, navigation }) => {
   const { partType } = serviceData;
@@ -24,7 +25,7 @@ export const ServiceParts = ({ serviceData, setServiceData, navigation }) => {
       
     </div>
     <div className="backBtn" onClick={() => navigation.previous()}>
-        Back
+    <img className="backBtnImg" src={backBtnImg} alt="back"/>
       </div>
     </>
   );

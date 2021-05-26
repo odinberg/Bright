@@ -246,9 +246,25 @@ button:hover{
 }
 
 .backBtn{
-    background-color: red;
-    height: 30px;
-    width: 40px;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    padding: 9px 25px;
+    background-color: #C3DC93;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.backBtn:hover{
+    background-color: #00966C;
+}
+
+.backBtnImg{
+    height: 80px;
+    margin-left: -170%;
+    margin-top: -60%;
 }
 
 .productContainer{
@@ -350,8 +366,56 @@ button:hover{
     margin-top: 5%;
 }
 
-.partsTxt{
+.batteryTxt{
     font-family: "Arial", sans-serif;
-    margin-bottom: 5px;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+
+.lightAndGooseneckTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.lightUnitTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 0%;
     margin-left: 30%;
 }
+
+.PCBATxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 18%;
+    margin-left: 40%;
+}
+
+.powerplugCoverTxt{
+    font-family: "Arial", sans-serif;
+    margin-left: 18%;
+}
+
+.screwTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 15%;
+    margin-left: 35%;
+}
+
+.powerSwitchCoverTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 10%;
+    margin-left: 12%;
+}
+
+.solarCableTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 13%;
+    margin-left: 28%;
+}
+
+.solarPanelTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 6%;
+    margin-left: 28%;
+}
+
