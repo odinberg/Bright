@@ -1,84 +1,85 @@
 import battery from "./images/parts/battery.PNG";
-import lightBulb from "./images/parts/lightbulb.PNG";
-import other from "./images/parts/other.PNG";
-import plugCover from "./images/parts/plugcover.PNG";
-import powerCable from "./images/parts/powercable.PNG";
+import lightAndGooseneck from "./images/parts/lightAndGooseneck.PNG";
+import lightUnit from "./images/parts/lightUnit.PNG";
+import PCBA from "./images/parts/PCBA.png"
+import powerPlugCover from "./images/parts/powerPlugCover.PNG";
+import screw from "./images/parts/screw.PNG";
 import powerSwitchCover from "./images/parts/powerswitchcover.PNG";
-import revPcba from "./images/parts/revpcba.PNG";
-import screws from "./images/parts/screws.PNG";
-import solarPanel from "./images/parts/solarpanel.PNG";
+import solarCable from "./images/parts/solarCable.PNG";
+import solarPanel from "./images/parts/solarPanel.PNG";
+
 
 export const Parts = [
   {
     idz: 1,
-    title: "Light Bulb",
-    image: lightBulb,
-    css: "",
-    imageCss: "",
-    textCss: "",
+    title: "Battery",
+    image: battery,
+    css: "styleParts",
+    imageCss: "batteryImg",
+    textCss: "partsTxt",
   },
   {
     idz: 2,
-    title: "Battery",
-    image: battery,
-    css: "",
-    imageCss: "",
-    textCss: "",
+    title: "Light and Gooseneck",
+    image: lightAndGooseneck,
+    css: "styleParts",
+    imageCss: "lightAndGooseneckImg",
+    textCss: "partsTxt",
   },
   {
     idz: 3,
-    title: "Solar panel",
-    image: solarPanel,
-    css: "",
-    imageCss: "",
-    textCss: "",
+    title: "Light Unit",
+    image: lightUnit,
+    css: "styleParts",
+    imageCss: "lightUnitImg",
+    textCss: "partsTxt",
   },
   {
     idz: 4,
-    title: "Power Cable",
-    image: powerCable,
-    css: "",
-    imageCss: "",
-    textCss: "",
+    title: "PCBA",
+    image: PCBA,
+    css: "styleParts",
+    imageCss: "PCBAImg",
+    textCss: "partsTxt",
   },
   {
     idz: 5,
-    title: "REV PCBA",
-    image: revPcba,
-    css: "",
-    imageCss: "",
-    textCss: "",
+    title: "Powerplug Cover",
+    image: powerPlugCover,
+    css: "styleParts",
+    imageCss: "powerPlugCoverImg",
+    textCss: "partsTxt",
+  },
+  {
+    idz: 6,
+    title: "Screws",
+    image: screw,
+    css: "styleParts",
+    imageCss: "screwImg",
+    textCss: "partsTxt",
   },
   {
     idz: 7,
     title: "Power Switch Cover",
     image: powerSwitchCover,
-    css: "",
-    imageCss: "",
-    textCss: "",
+    css: "styleParts",
+    imageCss: "powerSwitchCoverImg",
+    textCss: "partsTxt",
   },
   {
     idz: 8,
-    title: "Screws",
-    image: screws,
-    css: "",
-    imageCss: "",
-    textCss: "",
+    title: "Solar Cable",
+    image: solarCable,
+    css: "styleParts",
+    imageCss: "solarCableImg",
+    textCss: "partsTxt"
   },
   {
     idz: 9,
-    title: "Plug Cover",
-    image: plugCover,
-    css: "",
-    imageCss: "",
-    textCss: "",
-  },
-  {
-    idz: 10,
-    title: "Other",
-    image: other,
-    css: "",
-    imageCss: "",
-    textCss: "",
+    title: "Solar Panel",
+    image: solarPanel,
+    css: "styleParts",
+    imageCss: "solarPanelImg",
+    textCss: "partsTxt",
   },
 ];

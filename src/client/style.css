@@ -148,7 +148,6 @@ button:hover{
     border: 1px solid black;
     border-radius: 35px;
     display: inline-block;
-    margin-left: 12px;
     margin-top: 10px;
     overflow: hidden;
     -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
@@ -250,4 +249,109 @@ button:hover{
     background-color: red;
     height: 30px;
     width: 40px;
+}
+
+.productContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.partsContainer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px 240px;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 12px;
+}
+
+.styleParts{
+    position: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 250px;
+    width: 240px;
+    border: 1px solid black;
+    border-radius: 35px;
+    display: inline-block;
+    margin-left: 12px;
+    margin-top: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+}
+.batteryImg{
+    width: 90%;
+    object-fit: cover;
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+.lightAndGooseneckImg{
+    width: 50%;
+    object-fit: cover;
+    margin-left: 25%;
+}
+
+.lightUnitImg{
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.PCBAImg{
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-top: 25%;
+}
+
+.powerPlugCoverImg{
+    width: 50%;
+    object-fit: cover;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.screwImg{
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+.powerSwitchCoverImg{
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.solarCableImg{
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.solarPanelImg{
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.partsTxt{
+    font-family: "Arial", sans-serif;
+    margin-bottom: 5px;
+    margin-left: 30%;
 }
