@@ -8,9 +8,9 @@ import { AccordionDetails } from "@material-ui/core";
 export const Receipt = ({ serviceData }) => {
   const { productType, partType } = serviceData;
   return (
-    <Container>
+    <div className="receiptContainer">
       <h3>your receipt</h3>
-      
+
       <RenderAccordion
         summary="Products"
         details={[
@@ -22,17 +22,20 @@ export const Receipt = ({ serviceData }) => {
           },
         ]}
       />
-    </Container>
+    </div>
   );
 };
 
-export const RenderAccordion = ({ summary, details }) => (
+export const RenderAccordion = ({ summary, details, go }) => (
   <Accordion>
     <AccordionSummary>{summary}</AccordionSummary>
     <AccordionDetails>
       <div>
         {details.map((data, index) => {
-          console.log(Object.keys(data)[0]);
+          const objKey = Object.keys(data)[0];
+          const objValue = data[Object.keys(data)[0]];
+
+          return <div key={index}>{`${objKey}: ${objValue}`}</div>;
         })}
       </div>
     </AccordionDetails>

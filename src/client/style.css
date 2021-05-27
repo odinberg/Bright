@@ -278,6 +278,7 @@ button:hover{
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 
 .partsContainer{
@@ -293,13 +294,12 @@ button:hover{
 }
 
 .styleParts{
-    position: grid;
+    display: grid;
     grid-template-rows: 1fr 1fr;
     height: 250px;
     width: 240px;
     border: 1px solid black;
     border-radius: 35px;
-    display: inline-block;
     margin-left: 12px;
     margin-top: 10px;
     overflow: hidden;
@@ -422,3 +422,12 @@ button:hover{
     margin-left: 28%;
 }
 
+@media all and (max-width: 500px){
+    .body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        grid-gap: 12px;
+    }
+
+}
