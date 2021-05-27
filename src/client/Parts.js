@@ -1,17 +1,16 @@
 import battery from "./images/parts/battery.PNG";
 import lightAndGooseneck from "./images/parts/lightAndGooseneck.PNG";
 import lightUnit from "./images/parts/lightUnit.PNG";
-import PCBA from "./images/parts/PCBA.png"
+import PCBA from "./images/parts/PCBA.png";
 import powerPlugCover from "./images/parts/powerPlugCover.PNG";
 import screw from "./images/parts/screw.PNG";
 import powerSwitchCover from "./images/parts/powerswitchcover.PNG";
 import solarCable from "./images/parts/solarCable.PNG";
 import solarPanel from "./images/parts/solarPanel.PNG";
 
-
 export const Parts = [
   {
-    idz: 1,
+    idz: 6,
     title: "Battery",
     image: battery,
     css: "styleParts",
@@ -19,7 +18,7 @@ export const Parts = [
     textCss: "batteryTxt",
   },
   {
-    idz: 2,
+    idz: 7,
     title: "Light and Gooseneck",
     image: lightAndGooseneck,
     css: "styleParts",
@@ -27,7 +26,7 @@ export const Parts = [
     textCss: "lightAndGooseneckTxt",
   },
   {
-    idz: 3,
+    idz: 8,
     title: "Light Unit",
     image: lightUnit,
     css: "styleParts",
@@ -35,7 +34,7 @@ export const Parts = [
     textCss: "lightUnitTxt",
   },
   {
-    idz: 4,
+    idz: 9,
     title: "PCBA",
     image: PCBA,
     css: "styleParts",
@@ -43,7 +42,7 @@ export const Parts = [
     textCss: "PCBATxt",
   },
   {
-    idz: 5,
+    idz: 10,
     title: "Powerplug Cover",
     image: powerPlugCover,
     css: "styleParts",
@@ -51,7 +50,7 @@ export const Parts = [
     textCss: "powerplugCoverTxt",
   },
   {
-    idz: 6,
+    idz: 11,
     title: "Screws",
     image: screw,
     css: "styleParts",
@@ -59,7 +58,7 @@ export const Parts = [
     textCss: "screwTxt",
   },
   {
-    idz: 7,
+    idz: 12,
     title: "Power Switch Cover",
     image: powerSwitchCover,
     css: "styleParts",
@@ -67,15 +66,15 @@ export const Parts = [
     textCss: "powerSwitchCoverTxt",
   },
   {
-    idz: 8,
+    idz: 13,
     title: "Solar Cable",
     image: solarCable,
     css: "styleParts",
     imageCss: "solarCableImg",
-    textCss: "solarCableTxt"
+    textCss: "solarCableTxt",
   },
   {
-    idz: 9,
+    idz: 14,
     title: "Solar Panel",
     image: solarPanel,
     css: "styleParts",
