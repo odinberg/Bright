@@ -1,11 +1,8 @@
 import React from "react";
 import { Products } from "./Products";
 
-export const Service = ({ serviceData, setServiceData, navigation }) => {
+export const Service = ({ serviceData, navigation }) => {
   const { productType } = serviceData;
-
-  console.log(productType);
-  console.log(navigation);
 
   return (
     <div className="productContainer">

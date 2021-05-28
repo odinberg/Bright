@@ -4,6 +4,8 @@ import { Container } from "@material-ui/core";
 import { Accordion } from "@material-ui/core";
 import { AccordionSummary } from "@material-ui/core";
 import { AccordionDetails } from "@material-ui/core";
+import { Products } from "./Products";
+import { Parts } from "./Parts";
 
 export const Receipt = ({ serviceData }) => {
   const { productType, partType } = serviceData;
@@ -15,10 +17,10 @@ export const Receipt = ({ serviceData }) => {
         summary="Products"
         details={[
           {
-            Product: productType,
+            Product: Products,
           },
           {
-            Part: partType,
+            Part: Parts,
           },
         ]}
       />
@@ -26,7 +28,7 @@ export const Receipt = ({ serviceData }) => {
   );
 };
 
-export const RenderAccordion = ({ summary, details, go }) => (
+export const RenderAccordion = ({ summary, details }) => (
   <Accordion>
     <AccordionSummary>{summary}</AccordionSummary>
     <AccordionDetails>

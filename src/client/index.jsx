@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import { PageHeader } from "./pageHeader";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Learn } from "./learn";
-import { Service } from "./service";
 import { ServiceFunc } from "./ServiceFunc";
 import { Help } from "./help";
 

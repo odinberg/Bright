@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm, useStep } from "react-hooks-helper";
 import { ServiceParts } from "./ServiceParts";
 import { Service } from "./service";
 import { Receipt } from "./receipt";
 import { Submit } from "./submit";
+import { Products } from "./Products";
+import { Parts } from "./Parts";
 
 export const defaultData = {
-  productType: "",
-  partType: "",
+  Products: "",
+  Parts: "",
 };
 export const steps = [
   { id: "product" },
@@ -35,4 +37,15 @@ export const ServiceFunc = () => {
     case "submit":
       return <Submit {...props} />;
   }
+};
+
+const storeProduct = () => {
+  const productAndPartsList = { Products, Parts };
+  useEffect(() => {
+    sessionStorage.setItem(
+      "myProductsAndParts",
+      JSON.stringify(productAndPartsList)
+    );
+    console.log(productAndPartsList);
+  }, [productAndPartsList]);
 };
