@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-{/*import logo from "./images/brightlogo.png"*/}
+import logo from "./images/brightLogo.png"
 
 
 export function PageHeader(){
@@ -8,8 +8,7 @@ export function PageHeader(){
     return(
     <header>
         <Link to="/">
-        {/*<img className="logo" src={logo} alt="logo"/>*/}
-            <h1 className="logo">BR!GHT</h1>
+        <img className="logo" src={logo} alt="logo"/>
         </Link>
         <nav>
             <ul className="nav_links">

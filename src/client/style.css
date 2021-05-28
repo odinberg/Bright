@@ -37,24 +37,13 @@ header{
     background-color: #174A5B;
 }
 
-/*.logo{
-    width: 100px;
-    height: 50px;
+.logo{
+    width: 170px;
     cursor: pointer;
     position: absolute;
     left: 20px;
     margin-left: 20px;
-    margin-top: -25px;
-    
-}*/
-
-.logo{
-    font-family: "Arial", sans-serif;
-    color: #C3DC93;
-    position: absolute;
-    left: 20px;
-    margin-left: 20px;
-    margin-top: -20px;
+    margin-top: -15px;
 }
 
 .nav_links{
@@ -276,7 +265,6 @@ button:hover{
     position: fixed;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes */
     transform: translate(-50%, -50%);
     overflow: hidden;
 }
@@ -285,7 +273,6 @@ button:hover{
     position: fixed;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes */
     transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: 240px 240px 240px 240px 240px;
