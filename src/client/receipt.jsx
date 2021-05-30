@@ -9,7 +9,7 @@ export const Receipt = ({ serviceData }) => {
   const { productType, partType } = serviceData;
   return (
     <div className="receiptContainer">
-      <h3>your receipt</h3>
+      <h3>Your receipt</h3>
 
       <RenderAccordion
         summary="Products"
