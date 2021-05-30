@@ -4,24 +4,31 @@ import { Products } from "./Products";
 export const Service = ({ serviceData, navigation }) => {
   const { productType } = serviceData;
 
+  const nextStep = () => navigation.next();
+
+  const storeProduct = () => {
+    const productList = { Products };
+    sessionStorage.setItem("myProduct", JSON.stringify(productList));
+  };
+
   return (
     <div className="productContainer">
-      {Products.map((product) => (
+      {Products.map((product, index) => (
         <div
           name={productType}
-          key={product.idx}
+          key={index}
           className={product.css}
-          onClick={() => navigation.next()}
+          onClick={() => {
+            storeProduct();
+            nextStep();
+          }}
         >
           <img
-            key={product.idx}
             src={product.image}
             className={product.imageCss}
             alt={product.title}
           />
-          <h3 key={product.idx} className={product.textCss}>
-            {product.title}
-          </h3>
+          <h3 className={product.textCss}>{product.title}</h3>
         </div>
       ))}
     </div>
