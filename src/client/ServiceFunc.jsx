@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useForm, useStep } from "react-hooks-helper";
 import { ServiceParts } from "./ServiceParts";
 import { Service } from "./service";
@@ -39,7 +39,7 @@ export const ServiceFunc = () => {
   }
 };
 
-const storeProduct = () => {
+/*export const storeProduct = () => {
   const productAndPartsList = { Products, Parts };
   useEffect(() => {
     sessionStorage.setItem(
@@ -48,4 +48,4 @@ const storeProduct = () => {
     );
     console.log(productAndPartsList);
   }, [productAndPartsList]);
-};
+};*/
