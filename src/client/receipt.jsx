@@ -33,6 +33,8 @@ export const RenderAccordion = ({ summary, details }) => (
     <AccordionSummary>{summary}</AccordionSummary>
     <AccordionDetails>
       <div>
+
+
         {details.map((data, index) => {
           const objKey = Object.keys(data)[0];
           const objValue = data[Object.keys(data)[0]];
