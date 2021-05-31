@@ -77,7 +77,7 @@ header{
     color: #C3DC93;
 }
 
-button{
+.helpBtn{
     margin-left: 20px;
     padding: 9px 25px;
     background-color: #C3DC93;

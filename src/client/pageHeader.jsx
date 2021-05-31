@@ -19,7 +19,7 @@ export function PageHeader(){
         </nav>
         <SearchBar></SearchBar>
         <Link to="/help">
-            <button>Help</button>
+            <button className="helpBtn">Help</button>
         </Link>
     </header>
 )}
