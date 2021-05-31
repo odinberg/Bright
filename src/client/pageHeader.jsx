@@ -8,7 +8,7 @@ export function PageHeader(){
 
     return(
     <header>
-        <Link to="/">
+        <Link to="/service">
         <img className="logo" src={logo} alt="logo"/>
         </Link>
         <nav>
