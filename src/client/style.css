@@ -53,6 +53,7 @@ header{
     height: 35px;
     border-radius: 18px;
     padding: 9px;
+    background-color: red;
 }
 
 .nav_links{
