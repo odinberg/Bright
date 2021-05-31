@@ -7,7 +7,7 @@ export const Service = ({ serviceData, navigation }) => {
   const nextStep = () => navigation.next();
 
   const storeProduct = () => {
-    const productList = { Products };
+    const productList = { Products: Products };
     sessionStorage.setItem("myProduct", JSON.stringify(productList));
   };
 

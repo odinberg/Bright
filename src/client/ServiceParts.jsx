@@ -2,7 +2,7 @@ import React from "react";
 import { Parts } from "./Parts";
 import backBtnImg from "./images/backBtn.png";
 
-export const ServiceParts = ({ serviceData,  navigation }) => {
+export const ServiceParts = ({ serviceData, navigation }) => {
   const { partType } = serviceData;
   const nextStep = () => navigation.next();
   const storePart = () => {

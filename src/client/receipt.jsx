@@ -6,8 +6,11 @@ import { AccordionDetails } from "@material-ui/core";
 import { Products } from "./Products";
 import { Parts } from "./Parts";
 
-export const Receipt = ({ serviceData }) => {
+/*
+export const Receipt = ({ serviceData, title }) => {
   const { productType, partType } = serviceData;
+
+  const getData = sessionStorage.getItem("myPart");
   return (
     <div className="receiptContainer">
       <h3>your receipt</h3>
@@ -26,7 +29,6 @@ export const Receipt = ({ serviceData }) => {
     </div>
   );
 };
-
 export const RenderAccordion = ({ summary, details }) => (
   <Accordion>
     <AccordionSummary>{summary}</AccordionSummary>
@@ -37,9 +39,22 @@ export const RenderAccordion = ({ summary, details }) => (
           const objValue = data[Object.keys(data)[0]];
 
           //return <div key={index}>{`${objKey}: ${objValue}`}</div>;
-          return <div key={index}>{sessionStorage.getItem("myPart")}</div>;
+          return <div key={index}>{sessionStorage.getItem("myProduct")}</div>;
         })}
       </div>
     </AccordionDetails>
   </Accordion>
-);
+);*/
+
+export const Receipt = () => {
+  const getProduct = sessionStorage.getItem("myProduct");
+
+  alert(getProduct);
+
+  return (
+    <div className="receiptContainer">
+      <h3>your receipt</h3>
+      <div>{getProduct}</div>
+    </div>
+  );
+};
