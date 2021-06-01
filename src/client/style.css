@@ -234,12 +234,16 @@ button:hover{
 }
 
 .learn-header{
-    display: flex;
-    flex-flow: row;
-    background-color: #FBF6ED;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .sunbellLink{
+
     height: 250px;
     width: 240px;
     border: 1px solid black;
@@ -250,6 +254,7 @@ button:hover{
 }
 
 .moveLink{
+
     height: 250px;
     width: 240px;
     border: 1px solid black;
@@ -259,6 +264,7 @@ button:hover{
 }
 
 .startPlusLink{
+
     height: 250px;
     width: 240px;
     border: 1px solid black;
