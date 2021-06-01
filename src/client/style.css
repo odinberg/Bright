@@ -233,19 +233,56 @@ button:hover{
     margin-left: 40%;
 }
 
+.learn-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 5%;
+    background-color: #FBF6ED;
+}
+
+.video-container h1{
+    height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
 .video-settings {
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .video-settings iframe {
-    left: 0;
+    left: 10;
     top: 0;
-    height: 100%;
-    width: 100%;
+    height: 70%;
+    width: 70%;
     position: absolute;
+}
+
+.video_links{
+    list-style: none;
+}
+
+.video_links li{
+    display: inline-block;
+    padding: 0px 174px;
+    position: relative;
+}
+
+.video_links li a{
+    color:#174A5B;
+    font-weight: bold;
+}
+
+.video_links li a:hover{
+    color: #649704;
 }
 
 .backBtn{
