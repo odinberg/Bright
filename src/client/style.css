@@ -159,7 +159,7 @@ button:hover{
 }
 
 .sunbellSmartImg{
-    width: 140%;
+    height: 335px;
     object-fit: cover;
     margin-left: -15%;
     margin-top: -30%;
@@ -235,10 +235,36 @@ button:hover{
 
 .learn-header{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20% 10%;
+    flex-flow: row;
     background-color: #FBF6ED;
+}
+
+.sunbellLink{
+    height: 250px;
+    width: 240px;
+    border: 1px solid black;
+    border-radius: 35px;
+    margin-left: 12px;
+    margin-top: 10px;
+    display: grid;
+}
+
+.moveLink{
+    height: 250px;
+    width: 240px;
+    border: 1px solid black;
+    border-radius: 35px;
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+.startPlusLink{
+    height: 250px;
+    width: 240px;
+    border: 1px solid black;
+    border-radius: 35px;
+    margin-left: 12px;
+    margin-top: 10px;
 }
 
 .video-container h1{

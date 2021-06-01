@@ -14,9 +14,9 @@ export const ServiceParts = ({ serviceData,  navigation }) => {
     <>
       <h3>Pick the part you have to switch out</h3>
 
-      <div className="backBtn" onClick={() => navigation.previous()}>
+      <button className="backBtn" onClick={() => navigation.previous()}>
         <img className="backBtnImg" src={backBtnImg} alt="back" />
-      </div>
+      </button>
 
       <div className="partsContainer">
         {Parts.map((part, index) => (

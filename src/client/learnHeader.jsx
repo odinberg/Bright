@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import { Products } from "./Products";
+import startPlus from "./images/products/startPlus.png";
+import moveSmart from "./images/products/moveSmart.png";
+import sunbellSmart from "./images/products/sunbellSmart.png";
 
 
 export function LearnHeader(){
@@ -8,11 +10,26 @@ export function LearnHeader(){
     return(
     <header className="learn-header">
         <nav>
-            <ul className="video_links">
-                <li><Link to="/sunbellVideo">How to Sunbell Smart</Link></li>
-                <li><Link to="/moveVideo">How to Move Smart</Link></li>
-                <li><Link to="/startVideo">How to Start+</Link></li>
-            </ul>
+            <div className="video_links">
+                <Link to="/sunbellVideo">
+                    <div className="sunbellLink">
+                        <img className="sunbellSmartImg" src={sunbellSmart}></img>
+                        <li>How to Sunbell Smart</li>
+                    </div>
+                </Link>
+                <Link to="/moveVideo">
+                    <div className="moveLink">
+                        <img className="moveSmartImg"src={moveSmart}></img>
+                        <li>How to Move Smart</li>
+                    </div>
+                </Link>
+                <Link to="/startVideo">
+                    <div className="startPlusLink">
+                        <img className="startPlusImg" src={startPlus}></img>
+                        <li>How to Start+</li>
+                    </div>
+                </Link>
+            </div>
         </nav>
     </header>
 )}
