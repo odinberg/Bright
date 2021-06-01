@@ -7,8 +7,8 @@ export const Service = ({ serviceData, navigation }) => {
   const nextStep = () => navigation.next();
 
   const storeProduct = (index) => {
-    sessionStorage.setItem("myProduct", JSON.stringify(Products[index]));
-    console.log(JSON.stringify(Products[1]));
+    sessionStorage.setItem("myProductID", JSON.stringify(Products[index].idx));
+    console.log(JSON.stringify(Products[1].idx));
   };
 
   return (
@@ -21,7 +21,6 @@ export const Service = ({ serviceData, navigation }) => {
           onClick={() => {
             storeProduct(index);
             nextStep();
-            console.log(index);
           }}
         >
           <img

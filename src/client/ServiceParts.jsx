@@ -7,7 +7,7 @@ export const ServiceParts = ({ serviceData,  navigation }) => {
   const { partType } = serviceData;
   const nextStep = () => navigation.next();
   const storePart = (index) => {
-    sessionStorage.setItem("myPart", JSON.stringify(Parts[index]));
+    sessionStorage.setItem("myPartID", JSON.stringify(Parts[index].idz));
   };
 
   return (
