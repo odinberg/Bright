@@ -165,6 +165,13 @@ button:hover{
     margin-top: -30%;
 }
 
+.sunbellSmartLearnImg{
+    height: 280px;
+    object-fit: cover;
+    margin-left: -4%;
+    margin-top: -15%;
+}
+
 .moveSmartDiv{
     height: 250px;
     width: 240px;
@@ -233,17 +240,35 @@ button:hover{
     margin-left: 40%;
 }
 
-.learn-header{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.learnDiv{
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    padding-left: 5%;
 }
 
-.sunbellLink{
+.learnSunbellTxt{     
+    color: #174A5B;
+    margin-left: 15%;
+    margin-top: -15%;
+}
 
+.learnMoveTxt{     
+    color: #174A5B;
+    margin-left: 20%;
+    margin-top: -6%;
+}
+
+.learnSmartTxt{     
+    color: #174A5B;
+    margin-left: 30%;
+    margin-top: -33%;
+}
+
+
+.sunbellLink{
+    float: left;
     height: 250px;
     width: 240px;
     border: 1px solid black;
@@ -254,7 +279,7 @@ button:hover{
 }
 
 .moveLink{
-
+    float: left;
     height: 250px;
     width: 240px;
     border: 1px solid black;
@@ -264,7 +289,7 @@ button:hover{
 }
 
 .startPlusLink{
-
+    float: right;
     height: 250px;
     width: 240px;
     border: 1px solid black;
