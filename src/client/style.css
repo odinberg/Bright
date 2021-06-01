@@ -235,9 +235,9 @@ button:hover{
 
 .learn-header{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
-    padding: 30px 5%;
+    padding: 20% 10%;
     background-color: #FBF6ED;
 }
 
@@ -458,6 +458,8 @@ button:hover{
     margin-top: 6%;
     margin-left: 28%;
 }
+
+
 
 @media all and (max-width: 500px){
     .body{
