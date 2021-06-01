@@ -9,6 +9,46 @@ import { Parts } from "./Parts";
 export const Receipt = ({ serviceData }) => {
   const { productType, partType } = serviceData;
 
+
+
+  //Ikke i bruk enda
+  const retrieveService = (serviceID) => {
+    //DO: bruke søkebar til å genere kvitering på nytt
+    var str = sessionStorage.getItem(serviceID);
+    var prod = parseInt(str.substring(0, 1));
+    var prt = parseInt(str.substring(1, 3)); 
+
+    for(var i = 0; i <= Products.length; i++){
+      if (Products[i].idx == prod){
+        product = Products[i];
+        break;
+      }
+    }
+
+    for(var i = 0; i <= Parts.length; i++){
+      if (Parts[i].idz == prt){
+        part = Parts[i];
+        break;
+      }
+    }
+
+  }
+
+  const setServiceID = () => {
+    var done = false;
+    var i  = 0;
+    while(!done){
+      if(sessionStorage.getItem(JSON.stringify(i)) === null) {
+        var value = getValues();
+        var idx = value[0].idx;
+        var idz = value[1].idz;
+        sessionStorage.setItem(JSON.stringify(i), JSON.stringify(idx) + JSON.stringify(idz));
+        done = true;
+      }
+      i++;
+    }
+  }
+
   //Henter ut objektene fra Part og Product arrayene
   const getValues = () => {
 
@@ -30,10 +70,12 @@ export const Receipt = ({ serviceData }) => {
     console.log(JSON.stringify(product));
     console.log(JSON.stringify(part));
 
+    return [product, part];
+
   };
 
   return (
-    <div className="receiptContainer" onClick={getValues()}>
+    <div className="receiptContainer" onClick={setServiceID()}>
       <h3>Your receipt</h3>
 
       <RenderAccordion
