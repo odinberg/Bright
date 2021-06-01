@@ -244,7 +244,7 @@ button:hover{
     display: flex;
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 24%;
     padding-left: 5%;
 }
 
@@ -276,6 +276,9 @@ button:hover{
     margin-left: 12px;
     margin-top: 10px;
     display: grid;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
 }
 
 .moveLink{
@@ -286,6 +289,9 @@ button:hover{
     border-radius: 35px;
     margin-left: 12px;
     margin-top: 10px;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
 }
 
 .startPlusLink{
@@ -296,6 +302,9 @@ button:hover{
     border-radius: 35px;
     margin-left: 12px;
     margin-top: 10px;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
 }
 
 .video-container h1{
