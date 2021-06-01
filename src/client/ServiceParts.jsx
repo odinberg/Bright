@@ -1,13 +1,13 @@
 import React from "react";
 import { Parts } from "./Parts";
 import backBtnImg from "./images/backBtn.png";
+import { Products } from "./Products";
 
 export const ServiceParts = ({ serviceData,  navigation }) => {
   const { partType } = serviceData;
   const nextStep = () => navigation.next();
-  const storePart = () => {
-    const productList = { Parts };
-    sessionStorage.setItem("myPart", JSON.stringify(productList));
+  const storePart = (index) => {
+    sessionStorage.setItem("myPart", JSON.stringify(Parts[index]));
   };
 
   return (
@@ -25,7 +25,7 @@ export const ServiceParts = ({ serviceData,  navigation }) => {
             className={part.css}
             onClick={() => {
               nextStep();
-              storePart();
+              storePart(index);
             }}
           >
             <img className={part.imageCss} src={part.image} alt="image" />
