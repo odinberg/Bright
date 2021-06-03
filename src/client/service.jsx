@@ -12,6 +12,7 @@ export const Service = ({ serviceData, navigation }) => {
   };
 
   return (
+      <main className="mainContainer">
     <div className="productContainer">
       {Products.map((product, index) => (
         <div
@@ -32,5 +33,6 @@ export const Service = ({ serviceData, navigation }) => {
         </div>
       ))}
     </div>
+      </main>
   );
 };
