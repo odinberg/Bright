@@ -13,6 +13,7 @@ Gridandstylingforheader,main,products,andparts
     width:100%;
     grid-template-areas:
 "header"
+"main"
 "main";
 
     grid-template-columns:1fr;
@@ -22,7 +23,11 @@ Gridandstylingforheader,main,products,andparts
 
 .mainContainer{
     grid-area:main;
-    background-color:red;
+    background-color:lightgray;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
 }
 
 #root>header{
@@ -33,12 +38,14 @@ header{
     height:100px;
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
-    justify-items:flex-end;
+    /*justify-items:flex-end;*/
 }
 
 .logo{
     width:170px;
     cursor:pointer;
+    position: absolute;
+    top: 1rem;
 
 }
 
@@ -62,6 +69,7 @@ button:hover{
     height:35px;
     border-radius:18px;
     padding:9px;
+
 }
 
 /*
@@ -72,13 +80,14 @@ Product styling
     display:grid;
     grid-template-columns:repeat(5,240px);
     grid-template-rows:1fr;
-    background-color:red;
+    grid-gap: 1rem;
+    border: 1px solid grey;
     align-self: center;
 
 }
 
 .startPlusDiv{
-
+    width:240px;
     border:1px solid black;
     border-radius:35px;
     display:inline-block;
@@ -173,6 +182,34 @@ Product styling
     object-fit:cover;
     margin-left:10%;
 }
+
+.sunbellTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: -25%;
+    margin-left: 25%;
+}
+.moveSmartTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: -5%;
+    margin-left: 30%;
+}
+.startPlusTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: -30%;
+    margin-left: 30%;
+}
+.sunTurtleTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 8%;
+    margin-left: 35%;
+}
+.homeTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+
 li,a{
     font-family:"Arial",sans-serif;
     font-weight:500;
@@ -191,4 +228,48 @@ button{
     font-size:16px;
     color:#2C2A29;
     text-decoration:none;
+}
+
+@media only screen and (max-width: 700px)  {
+    #root{
+        display:grid;
+        width:100%;
+        grid-template-areas:
+"header"
+"main"
+"main";
+
+        grid-template-columns:3fr;
+        max-height:900px;
+    }
+
+
+    .mainContainer{
+        grid-area: main;
+        border: 1px solid grey;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    #root>header{
+        grid-area:header;
+        background-color: dimgrey;
+    }
+    .productContainer{
+        display:grid;
+        grid-template-rows:repeat(5,240px);
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        align-self: center;
+
+    }
+    .logo{
+        width:10px;
+        cursor:pointer;
+        position: absolute;
+        top: 1rem;
+
+    }
 }
