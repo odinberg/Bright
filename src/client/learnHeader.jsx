@@ -8,28 +8,31 @@ import sunbellSmart from "./images/products/sunbellSmart.png";
 export function LearnHeader(){
 
     return(
+
     <div className="learnDiv">
         
         <div className="video_links">
             <Link to="/sunbellVideo">
-                <div className="sunbellLink">
+                <div className="learnStyle">
                     <img className="sunbellSmartLearnImg" src={sunbellSmart}></img>
-                    <p className="learnSunbellTxt">How to Sunbell Smart</p>
+                    <p className="learnTxt">How to Sunbell Smart</p>
                 </div>
             </Link>
             <Link to="/moveVideo">
-                <div className="moveLink">
+                <div className="learnStyle">
                     <img className="moveSmartImg"src={moveSmart}></img>
-                    <p className="learnMoveTxt">How to Move Smart</p>
+                    <p className="learnTxt">How to Move Smart</p>
                 </div>
             </Link>
             <Link to="/startVideo">
-                <div className="startPlusLink">
+                <div className="learnStyle">
                     <img className="startPlusImg" src={startPlus}></img>
-                    <p className="learnSmartTxt">How to Start+</p>
+                    <p className="learnTxt">How to Start+</p>
                 </div>
             </Link>
         </div>
     </div>
+
 )}
+
 

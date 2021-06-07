@@ -12,6 +12,7 @@ export const ServiceParts = ({ serviceData,  navigation }) => {
 
   return (
     <>
+
       <h3>Pick the part you have to switch out</h3>
 
       <button className="backBtn" onClick={() => navigation.previous()}>

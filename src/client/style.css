@@ -2,10 +2,11 @@
 /*
 Gridandstylingforheader,main,products,andparts
 */
+
 *{
-    padding:0px
+    padding:0
 ;
-    margin:0px
+    margin:0
 ;
 }
 #root{
@@ -14,17 +15,23 @@ Gridandstylingforheader,main,products,andparts
     grid-template-areas:
 "header"
 "main"
-"main";
-
+"main"
+;
     grid-template-columns:1fr;
     max-height:900px;
+
 }
 
+
+.receiptContainer{
+    margin-top:7rem;
+}
 
 .mainContainer{
     grid-area:main;
     background-color:lightgray;
     display: grid;
+    grid-template-rows: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
 
@@ -33,19 +40,23 @@ Gridandstylingforheader,main,products,andparts
 #root>header{
     grid-area:header;
     background-color:#174A5B;
+
+
 }
 header{
     height:100px;
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
     /*justify-items:flex-end;*/
+    position: fixed;
+    width: 100%;
 }
+
 
 .logo{
     width:170px;
     cursor:pointer;
-    position: absolute;
-    top: 1rem;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
 
 }
 
@@ -57,6 +68,9 @@ header{
     border-radius:50px;
     cursor:pointer;
     transition:all 0.3s ease 0s;
+    position: fixed;
+    right: 5rem;
+    top: 2rem;
 }
 
 button:hover{
@@ -69,7 +83,30 @@ button:hover{
     height:35px;
     border-radius:18px;
     padding:9px;
+    position: fixed;
+    top: 1rem;
+    right: 12rem;
 
+
+}
+.nav_links{
+    list-style: none;
+    position: fixed ;
+    top: 2.4rem;
+    right: 27rem;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #C3DC93;
 }
 
 /*
@@ -79,20 +116,17 @@ Product styling
 .productContainer{
     display:grid;
     grid-template-columns:repeat(5,240px);
-    grid-template-rows:1fr;
+    grid-template-rows: 1fr;
     grid-gap: 1rem;
     border: 1px solid grey;
-    align-self: center;
-
+    grid-row-start: 2;
+    vertical-align: middle;
 }
 
 .startPlusDiv{
     width:240px;
     border:1px solid black;
     border-radius:35px;
-    display:inline-block;
-    margin-left:15px;
-    margin-top:12px;
     overflow:hidden;
     -webkit-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
     -moz-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
@@ -104,9 +138,6 @@ Product styling
     width:240px;
     border:1px solid black;
     border-radius:35px;
-    display:inline-block;
-    margin-left:15px;
-    margin-top:12px;
     overflow:hidden;
     -webkit-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
     -moz-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
@@ -117,8 +148,7 @@ Product styling
     width:240px;
     border:1px solid black;
     border-radius:35px;
-    display:inline-block;
-    margin-top:10px;
+
     overflow:hidden;
     -webkit-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
     -moz-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
@@ -129,9 +159,6 @@ Product styling
     width:240px;
     border:1px solid black;
     border-radius:35px;
-    display:inline-block;
-    margin-left:12px;
-    margin-top:10px;
     overflow:hidden;
     -webkit-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
     -moz-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
@@ -142,9 +169,7 @@ Product styling
     width:240px;
     border:1px solid black;
     border-radius:35px;
-    display:inline-block;
-    margin-left:12px;
-    margin-top:10px;
+
     overflow:hidden;
     -webkit-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
     -moz-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
@@ -173,14 +198,12 @@ Product styling
     height:350px;
     width:350px;
     object-fit:cover;
-    margin-left:-25%;
-    margin-top:-30%;
 }
 .homeImg{
     height:80%;
     width:80%;
     object-fit:cover;
-    margin-left:10%;
+
 }
 
 .sunbellTxt{
@@ -230,7 +253,330 @@ button{
     text-decoration:none;
 }
 
-@media only screen and (max-width: 700px)  {
+/*Parts styling*/
+.partsContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-start: 6;
+    grid-template-columns:repeat(5, 250px) ;
+    grid-gap: 2rem;
+    border: 1px solid grey;
+    position: fixed;
+    left: 10rem;
+    top: 10rem;
+}
+
+.styleParts{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 250px;
+    width: 240px;
+    border: 1px solid black;
+    border-radius: 35px;
+    margin-left: 12px;
+    margin-top: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+}
+
+.backBtn{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 7rem;
+    left: 1rem;
+    background-color: #C3DC93;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+}
+
+
+.backBtn:hover{
+    background-color: #00966C;
+}
+
+.backBtnImg{
+    height: 80px;
+    margin-left: -11%;
+    margin-top: -7%;
+}
+.batteryImg{
+    width: 90%;
+    object-fit: cover;
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+.lightAndGooseneckImg{
+    width: 50%;
+    object-fit: cover;
+    margin-left: 25%;
+}
+
+.lightUnitImg{
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.PCBAImg{
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-top: 25%;
+}
+
+.powerPlugCoverImg{
+    width: 50%;
+    object-fit: cover;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.screwImg{
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+.powerSwitchCoverImg{
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.solarCableImg{
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.solarPanelImg{
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.batteryTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+
+.lightAndGooseneckTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.lightUnitTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 0%;
+    margin-left: 30%;
+}
+
+.PCBATxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 18%;
+    margin-left: 40%;
+}
+
+.powerplugCoverTxt{
+    font-family: "Arial", sans-serif;
+    margin-left: 18%;
+}
+
+.screwTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 15%;
+    margin-left: 35%;
+}
+
+.powerSwitchCoverTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 10%;
+    margin-left: 12%;
+}
+
+.solarCableTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 13%;
+    margin-left: 28%;
+}
+
+.solarPanelTxt{
+    font-family: "Arial", sans-serif;
+    margin-top: 6%;
+    margin-left: 28%;
+}
+
+/*Learn styling*/
+.learnStyle{
+    height: 250px;
+    width: 240px;
+    border: 1px solid black;
+    border-radius: 35px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
+}
+.startPlusImg{
+    height: 250px;
+    width: 240px;
+}
+
+.sunbellSmartLearnImg{
+    height: 280px;
+    object-fit: cover;
+    margin-left: -4%;
+    margin-top: -15%;
+}
+.learnTxt{
+    margin-left: 15%;
+    margin-top: -15%;
+    color: #174A5B;
+}
+.video-container h1{
+    height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.video-settings {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.video_links{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-start: 3;
+    grid-gap: 5rem;
+
+}
+
+.video-settings iframe {
+    left: 1;
+    top: 0;
+    height: 70%;
+    width: 70%;
+    position: absolute;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 1200px){
+
+    .partsContainer{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        border: 1px solid grey;
+        vertical-align: middle;
+
+    }
+    .learnStyle{
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        border-radius: 35px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+}
+
+@media only screen and (max-width: 1000px)  {
+    #root{
+        display:grid;
+        width:100%;
+        grid-template-areas:
+"header"
+"main";
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+    .mainContainer{
+        grid-area: main;
+        border: 1px solid grey;
+        display: grid;
+        overflow: scroll;
+        grid-template-rows: 1fr;
+
+    }
+
+    #root>header{
+        grid-area:header;
+        background-color: red;
+        width:100%;
+        height: 75px;
+    }
+    .helpBtn{
+        top: 1rem;
+    }
+    .searchBar{
+        top: 0.4rem;
+    }
+    .nav_links{
+        top: 2rem;
+    }
+    .productContainer{
+        grid-template-rows:repeat(5,240px);
+        grid-template-columns: 1fr;
+        grid-row-start: 1;
+        grid-gap: 2rem;
+        margin: 1rem;
+    }
+
+    .partsContainer{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        border: 1px solid grey;
+        vertical-align: middle;
+
+    }
+    .video_links{
+        display: grid;
+        grid-gap: 5rem;
+        position: absolute;
+        left: 3rem;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+}
+@media only screen and (max-width: 750px)  {
     #root{
         display:grid;
         width:100%;
@@ -239,37 +585,82 @@ button{
 "main"
 "main";
 
-        grid-template-columns:3fr;
         max-height:900px;
     }
 
+    .logo{
 
+    }
     .mainContainer{
         grid-area: main;
         border: 1px solid grey;
         display: grid;
+        grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
-
     }
 
     #root>header{
         grid-area:header;
-        background-color: dimgrey;
+        background-color: pink;
+        height: 50px;
+    }
+    .helpBtn{
+        top: 0.3rem;
+    }
+    .searchBar{
+        top: 0.3rem;
+        height: 17px;
+
+    }
+    .nav_links{
+        top: 0.8rem;
+        list-style: none;
     }
     .productContainer{
+        top: 2rem;
         display:grid;
         grid-template-rows:repeat(5,240px);
         grid-template-columns: 1fr;
-        grid-gap: 1rem;
+        grid-gap: 2rem;
         align-self: center;
 
     }
+    .partsContainer{
+        left: 2rem;
+    }
     .logo{
-        width:10px;
+        width:50px;
+        height:20px;
         cursor:pointer;
-        position: absolute;
+        position: fixed;
         top: 1rem;
+        opacity: 0;
 
     }
+    .styleParts{
+        height: 200px;
+        width: 200px;
+    }
+    .video_links{
+       display: grid;
+        grid-template-columns: 1fr;
+        left: 15rem;
+        margin-top: 8rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .partsContainer{
+
+    }
+    .nav_links{
+        left: 0rem;
+        top: 0.5rem;
+    }
+    .searchBar{
+        left: 6rem;
+        width: 150px;
+    }
+
 }
