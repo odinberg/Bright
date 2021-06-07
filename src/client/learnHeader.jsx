@@ -15,19 +15,19 @@ export function LearnHeader(){
             <Link to="/sunbellVideo">
                 <div className="learnStyle">
                     <img className="sunbellSmartLearnImg" src={sunbellSmart}></img>
-                    <p className="learnTxt">How to Sunbell Smart</p>
+                    <p className="learnSunbellTxt">How to Sunbell Smart</p>
                 </div>
             </Link>
             <Link to="/moveVideo">
                 <div className="learnStyle">
-                    <img className="moveSmartImg"src={moveSmart}></img>
-                    <p className="learnTxt">How to Move Smart</p>
+                    <img className="moveSmartLearnImg"src={moveSmart}></img>
+                    <p className="learnMoveSmartTxt">How to Move Smart</p>
                 </div>
             </Link>
             <Link to="/startVideo">
                 <div className="learnStyle">
-                    <img className="startPlusImg" src={startPlus}></img>
-                    <p className="learnTxt">How to Start+</p>
+                    <img className="startPlusLearnImg" src={startPlus}></img>
+                    <p className="learnStartPlusTxt">How to Start+</p>
                 </div>
             </Link>
         </div>

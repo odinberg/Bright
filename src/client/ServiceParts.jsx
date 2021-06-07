@@ -18,7 +18,6 @@ export const ServiceParts = ({ serviceData,  navigation }) => {
       <button className="backBtn" onClick={() => navigation.previous()}>
         <img className="backBtnImg" src={backBtnImg} alt="back" />
       </button>
-
       <div className="partsContainer">
         {Parts.map((part, index) => (
           <div
@@ -30,10 +29,11 @@ export const ServiceParts = ({ serviceData,  navigation }) => {
             }}
           >
             <img className={part.imageCss} src={part.image} alt="image" />
-            <h3 className={part.textCss}>{part.title}</h3>
+            <h3 className={part.textCss }>{part.title}</h3>
           </div>
         ))}
+
       </div>
     </>
-  );
-};
+  )
+}

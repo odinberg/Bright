@@ -9,6 +9,9 @@ Gridandstylingforheader,main,products,andparts
     margin:0
 ;
 }
+html{
+    background-color: #FBF6ED;
+}
 #root{
     display:grid;
     width:100%;
@@ -20,6 +23,7 @@ Gridandstylingforheader,main,products,andparts
     grid-template-columns:1fr;
     max-height:900px;
 
+
 }
 
 
@@ -29,7 +33,6 @@ Gridandstylingforheader,main,products,andparts
 
 .mainContainer{
     grid-area:main;
-    background-color:lightgray;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     justify-items: center;
@@ -118,7 +121,6 @@ Product styling
     grid-template-columns:repeat(5,240px);
     grid-template-rows: 1fr;
     grid-gap: 1rem;
-    border: 1px solid grey;
     grid-row-start: 2;
     vertical-align: middle;
 }
@@ -260,7 +262,6 @@ button{
     grid-row-start: 6;
     grid-template-columns:repeat(5, 250px) ;
     grid-gap: 2rem;
-    border: 1px solid grey;
     position: fixed;
     left: 10rem;
     top: 10rem;
@@ -275,7 +276,6 @@ button{
     border-radius: 35px;
     margin-left: 12px;
     margin-top: 10px;
-    overflow: hidden;
     -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
     -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
     box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
@@ -429,8 +429,8 @@ button{
     border: 1px solid black;
     border-radius: 35px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 0.2fr;
+    grid-template-rows: 1fr;
     -webkit-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
     -moz-box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
     box-shadow: 3px 7px 11px -2px rgba(0,0,0,1);
@@ -443,12 +443,35 @@ button{
 .sunbellSmartLearnImg{
     height: 280px;
     object-fit: cover;
-    margin-left: -4%;
-    margin-top: -15%;
+    margin-left: -1rem;
+    margin-top: -18%;
 }
-.learnTxt{
-    margin-left: 15%;
-    margin-top: -15%;
+.moveSmartLearnImg{
+    height: 280px;
+    object-fit: cover;
+    margin-left: -4rem;
+    margin-top: -18%;
+}
+.startPlusLearnImg{
+    height: 280px;
+    object-fit: cover;
+    margin-left: -2rem;
+    margin-top: -18%;
+}
+
+.learnSunbellTxt{
+    margin-left: -14rem;
+    margin-top: 13rem;
+    color: #174A5B;
+}
+ .learnMoveSmartTxt{
+     margin-left: -16rem;
+     margin-top: 13rem;
+    color: #174A5B;
+}
+  .learnStartPlusTxt{
+      margin-left: -11rem;
+      margin-top: 13rem;
     color: #174A5B;
 }
 .video-container h1{
@@ -469,10 +492,9 @@ button{
 
 .video_links{
     margin-top: 10rem;
+    margin-left: 9rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-start: 3;
     grid-gap: 5rem;
 
 }
@@ -486,25 +508,54 @@ button{
 }
 
 /* For mobile devices */
+
+@media only screen and (max-width: 1350px) {
+    .partsContainer{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: -3rem;
+    }
+}
+
 @media only screen and (max-width: 1200px){
 
+    #root{
+        overflow: scroll;
+    }
+
+    .productContainer{
+        overflow: hidden;
+    }
     .partsContainer{
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1rem;
-        border: 1px solid grey;
         vertical-align: middle;
+        margin-top: -3rem;
 
     }
     .learnStyle{
-        height: 200px;
-        width: 200px;
         border: 1px solid black;
         border-radius: 35px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+    .learnSunbellTxt{
+        margin-left: 3rem;
+        margin-top: -1.8rem;
+
+    }
+    .learnMoveSmartTxt{
+        margin-left: 3rem;
+        margin-top: -1.2rem;
+
+    }
+    .learnStartPlusTxt{
+        margin-left: 4.5rem;
+        margin-top: -2rem;
+
     }
 
 
@@ -523,7 +574,6 @@ button{
 
     }
 
-
     .mainContainer{
         grid-area: main;
         border: 1px solid grey;
@@ -535,7 +585,6 @@ button{
 
     #root>header{
         grid-area:header;
-        background-color: red;
         width:100%;
         height: 75px;
     }
@@ -553,26 +602,73 @@ button{
         grid-template-columns: 1fr;
         grid-row-start: 1;
         grid-gap: 2rem;
-        margin: 1rem;
+        margin-top: 5rem;
     }
 
     .partsContainer{
         display: grid;
         grid-template-rows: 1fr 1fr;
-
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1rem;
-        border: 1px solid grey;
         vertical-align: middle;
+        margin-top: -4rem;
 
+    }
+    .styleParts{
+        height: 160px;
+        width: 150px;
     }
     .video_links{
         display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         grid-gap: 5rem;
-        position: absolute;
-        left: 3rem;
         text-align: center;
         vertical-align: middle;
+        margin-top: 7rem;
+    }
+    .learnSunbellTxt{
+        margin-left: -1rem;
+        margin-top: -1.8rem;
+
+    }
+    .learnMoveSmartTxt{
+        margin-left: -4rem;
+        margin-top: -1.2rem;
+
+    }
+    .learnStartPlusTxt{
+        margin-left: -1rem;
+        margin-top: -2rem;
+
+    }
+    .batteryTxt{
+        font-size:  15px;
+    }
+    .lightAndGooseneckTxt{
+        font-size:  15px;
+        margin-left: 2.5rem;
+    }
+    .lightUnitTxt{
+        font-size:  15px;
+    }
+    .PCBATxt{
+        font-size:  15px;
+    }
+    .powerplugCoverTxt{
+        font-size:  15px;
+    }
+    .screwTxt{
+        font-size:  15px;
+    }
+    .powerSwitchCoverTxt{
+        font-size:  15px;
+    }
+    .solarCableTxt{
+        font-size:  15px;
+    }
+    .solarPanelTxt{
+        font-size:  15px;
     }
 
 }
@@ -602,7 +698,6 @@ button{
 
     #root>header{
         grid-area:header;
-        background-color: pink;
         height: 50px;
     }
     .helpBtn{
@@ -624,10 +719,13 @@ button{
         grid-template-columns: 1fr;
         grid-gap: 2rem;
         align-self: center;
+        margin-top: 3rem;
 
     }
     .partsContainer{
-        left: 2rem;
+        left: 7rem;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .logo{
         width:50px;
@@ -639,20 +737,50 @@ button{
 
     }
     .styleParts{
-        height: 200px;
-        width: 200px;
+        height: 160px;
+        width: 150px;
     }
     .video_links{
        display: grid;
         grid-template-columns: 1fr;
         left: 15rem;
-        margin-top: 8rem;
+        margin-top: 5rem;
+    }
+    .batteryTxt{
+        font-size:  15px;
+    }
+    .lightAndGooseneckTxt{
+        font-size:  15px;
+    }
+    .lightUnitTxt{
+        font-size:  15px;
+            }
+    .PCBATxt{
+        font-size:  15px;
+    }
+    .powerplugCoverTxt{
+        font-size:  15px;
+    }
+    .screwTxt{
+        font-size:  15px;
+    }
+    .powerSwitchCoverTxt{
+        font-size:  15px;
+    }
+    .solarCableTxt{
+        font-size:  15px;
+    }
+    .solarPanelTxt{
+        font-size:  15px;
     }
 }
 
 @media only screen and (max-width: 550px) {
+    .productContainer{
+        margin-top: 5rem;
+    }
     .partsContainer{
-
+        margin-top: -5rem;
     }
     .nav_links{
         left: 0rem;
