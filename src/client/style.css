@@ -608,6 +608,10 @@ button{
     .nav_links{
         top: 2rem;
     }
+    .logo{
+        top: 2rem;
+        width: 100px;
+    }
     .productContainer{
         grid-template-rows:repeat(5,240px);
         grid-template-columns: 1fr;
@@ -736,6 +740,7 @@ button{
     }
     .partsContainer{
         left: 7rem;
+        margin-top: -6rem;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
@@ -794,18 +799,21 @@ button{
         margin-top: 5rem;
     }
     .partsContainer{
-        margin-top: -5rem;
+        margin-top: -6rem;
     }
     .nav_links{
-        left: 0rem;
+        left: 2rem;
         top: 0.5rem;
     }
     .searchBar{
-        left: 6rem;
+        right: 8rem;
         width: 150px;
     }
     .video_links{
         margin-left: 5rem;
+    }
+    .helpBtn{
+        right: 1rem;
     }
 
 }
