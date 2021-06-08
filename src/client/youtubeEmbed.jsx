@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+/* Get video from youtube*/
+
 const YoutubeEmbed = ({ embedId }) => (
 <div className="video-settings">
     <iframe

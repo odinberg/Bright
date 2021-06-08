@@ -4,6 +4,8 @@ import logo from "./images/brightLogo.png"
 import {SearchBar} from "./searchBar1"
 
 
+/* Setup for header*/
+
 export function PageHeader(){
 
     return(

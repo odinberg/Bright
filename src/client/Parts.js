@@ -8,6 +8,8 @@ import powerSwitchCover from "./images/parts/powerswitchcover.PNG";
 import solarCable from "./images/parts/solarCable.PNG";
 import solarPanel from "./images/parts/solarPanel.PNG";
 
+/*Part array with different parts*/
+
 export const Parts = [
   {
     idz: 6,
