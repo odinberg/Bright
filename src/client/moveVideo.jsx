@@ -1,6 +1,7 @@
 import React from "react";
 import YoutubeEmbed from "./youtubeEmbed";
 
+/* Open the Move Smart video */
 
 export function MoveVideo() {
     return (

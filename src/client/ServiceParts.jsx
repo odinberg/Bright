@@ -4,12 +4,19 @@ import backBtnImg from "./images/backBtn.png";
 
 export const ServiceParts = ({ serviceData,  navigation }) => {
   const { partType } = serviceData;
+
+    /*Going to next step of the service */
   const nextStep = () => navigation.next();
+
+
+    /* Stores the part clicked and set to sessionStorage */
   const storePart = () => {
     const productList = { Parts };
     sessionStorage.setItem("myPart", JSON.stringify(productList));
   };
 
+
+    /* Setup for parts, return all the parts */
   return (
     <>
 

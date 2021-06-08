@@ -4,6 +4,8 @@ import sunbellSmart from "./images/products/sunbellSmart.png";
 import sunTurtle from "./images/products/sunTurtle.png";
 import home from "./images/products/home.png";
 
+/*Product array with different products*/
+
 export const Products = [
   {
     idx: 1,

@@ -1,6 +1,7 @@
 import React from "react";
 import YoutubeEmbed from "./youtubeEmbed";
 
+/* Open the start plus video */
 
 export function StartVideo() {
     return (
