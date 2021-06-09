@@ -11,10 +11,15 @@ export const Receipt = ({ serviceData }) => {
 
 
 
-  //Ikke i bruk enda
+  //Ikke i bruk enda, sjekker søk mot id i sessionStorage og genererer kvitering på nytt med verdiene
   const retrieveService = (serviceID) => {
     //DO: bruke søkebar til å genere kvitering på nytt
     var str = sessionStorage.getItem(serviceID);
+
+    var product;
+    var part;
+
+    //Parser først "nummer(string)" for produkt og så de to siste for part
     var prod = parseInt(str.substring(0, 1));
     var prt = parseInt(str.substring(1, 3)); 
 
@@ -31,9 +36,12 @@ export const Receipt = ({ serviceData }) => {
         break;
       }
     }
+    console.log(product)
+    console.log(part);
 
   }
 
+  //Sjekker om ny ID er i localStorage, sjekker til den finner gyldig plass
   const setServiceID = () => {
     var done = false;
     var i  = 0;
@@ -67,6 +75,8 @@ export const Receipt = ({ serviceData }) => {
         break;
       }
     }
+
+    //For Debug, fjern senere
     console.log(JSON.stringify(product));
     console.log(JSON.stringify(part));
 
