@@ -11,6 +11,18 @@ export const Receipt = () => {
     const obj = JSON.parse(sessionStorage.getItem("myProduct"));
     const obj2 = JSON.parse(sessionStorage.getItem("myPart"));
 
+    const serviceID  = (length) => {
+        let result           = '';
+        let characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        let charactersLength = characters.length;
+        for ( let i = 0; i < length; i++ ) {
+            result += characters.charAt(Math.floor(Math.random() *
+                charactersLength));
+        }
+        return result;
+    }
+
+
   return (
       <div>
           <h1 className="yourReceipt">Your receipt</h1>
@@ -30,7 +42,7 @@ export const Receipt = () => {
         </div>
 
     </div>
-          <h1 className="serviceID">SERVICE ID : 420</h1>
+          <h1 className="serviceID">SERVICE ID: {serviceID(8)}</h1>
       </div>
   );
 };
