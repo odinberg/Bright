@@ -12,9 +12,9 @@ export const Service = ({ serviceData, navigation }) => {
 
 
   /* Stores the product clicked and set to sessionStorage */
-  const storeProduct = () => {
-    const productList = { Products };
-    sessionStorage.setItem("myProduct", JSON.stringify(productList));
+  const storeProduct = (product) => {
+
+    sessionStorage.setItem("myProduct", JSON.stringify(product));
   };
 
 
@@ -28,7 +28,7 @@ export const Service = ({ serviceData, navigation }) => {
           key={index}
           className={product.css}
           onClick={() => {
-            storeProduct();
+            storeProduct(product);
             nextStep();
           }}
         >

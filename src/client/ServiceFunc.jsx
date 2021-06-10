@@ -29,7 +29,7 @@ export const ServiceFunc = () => {
   const [serviceData, setServiceData] = useForm(defaultData);
   const { step, navigation } = useStep({
     steps,
-    initialStep: 0,
+    initialStep: 2,
   });
 
   const props = { serviceData, setServiceData, navigation };

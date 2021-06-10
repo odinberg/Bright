@@ -10,9 +10,9 @@ export const ServiceParts = ({ serviceData,  navigation }) => {
 
 
     /* Stores the part clicked and set to sessionStorage */
-  const storePart = () => {
-    const productList = { Parts };
-    sessionStorage.setItem("myPart", JSON.stringify(productList));
+  const storePart = (part) => {
+
+    sessionStorage.setItem("myPart", JSON.stringify(part));
   };
 
 
@@ -32,7 +32,7 @@ export const ServiceParts = ({ serviceData,  navigation }) => {
             className={part.css}
             onClick={() => {
               nextStep();
-              storePart();
+              storePart(part);
             }}
           >
             <img className={part.imageCss} src={part.image} alt="image" />

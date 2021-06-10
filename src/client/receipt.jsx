@@ -6,40 +6,31 @@ import { AccordionDetails } from "@material-ui/core";
 import { Products } from "./Products";
 import { Parts } from "./Parts";
 
-export const Receipt = ({ serviceData }) => {
-  const { productType, partType } = serviceData;
-  return (
-    <div className="receiptContainer">
-      <h3>Your receipt</h3>
+export const Receipt = () => {
 
-      <RenderAccordion
-        summary="Products"
-        details={[
-          {
-            Product: Products,
-          },
-          {
-            Part: Parts,
-          },
-        ]}
-      />
+    const obj = JSON.parse(sessionStorage.getItem("myProduct"));
+    const obj2 = JSON.parse(sessionStorage.getItem("myPart"));
+
+  return (
+      <div>
+          <h1 className="yourReceipt">Your receipt</h1>
+          <div className="receiptContainer">
+        <div className="receiptProduct">
+            <h1>
+                {obj.title}
+            </h1>
+
+            <img src={obj.image}/>
+        </div>
+        <div className="receiptPart">
+            <h2>
+                {obj2.title}
+            </h2>
+            <img src={obj2.image}/>
+        </div>
+
     </div>
+      </div>
   );
 };
 
-export const RenderAccordion = ({ summary, details }) => (
-  <Accordion>
-    <AccordionSummary>{summary}</AccordionSummary>
-    <AccordionDetails>
-      <div>
-        {details.map((data, index) => {
-          const objKey = Object.keys(data)[0];
-          const objValue = data[Object.keys(data)[0]];
-
-          //return <div key={index}>{`${objKey}: ${objValue}`}</div>;
-          return <div key={index}>{sessionStorage.getItem("myPart")}</div>;
-        })}
-      </div>
-    </AccordionDetails>
-  </Accordion>
-);
