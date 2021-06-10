@@ -26,7 +26,7 @@ export const Receipt = () => {
 
     /*Display for receipt */
   return (
-      <div>
+      <div className="fullReceiptContainer">
           <h1 className="yourReceipt">Your receipt</h1>
           <div className="receiptContainer">
         <div className="receiptProduct">

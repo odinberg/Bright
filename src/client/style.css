@@ -418,24 +418,31 @@ button{
 }
 
 /* Receipt styling */
+.fullReceiptContainer{
+    margin: 10rem auto 0;
+    background-color: #fcfbf7;
+    border: 1px solid black;
+    border-radius:35px;
+    width: 650px;
+    height: 650px;
+    text-align: center;
+    -webkit-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+
+}
 
 .receiptContainer {
     margin-top: 2rem;
     margin-left: 2rem;
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    width: 600px;
+}
 
-
-}
-.yourReceipt{
-    margin-top: 7rem;
-    margin-left: 2rem;
-}
-.serviceID{
-    margin-left: 2rem;
-}
 .receiptProduct{
+    background-color: #FBF6ED;
     width:240px;
     height:240px;
     border:1px solid black;
@@ -456,6 +463,7 @@ button{
     margin-top: 0.5rem;
 }
 .receiptPart{
+    background-color: #FBF6ED;
     width:240px;
     height:240px;
     border:1px solid black;
@@ -930,18 +938,19 @@ button{
     .helpBtn{
         right: 1rem;
     }
+    .fullReceiptContainer{
+        height: 900px;
+        width: 400px;
+        background-color: #fcfbf7;
+        border: 1px solid black;
+        border-radius:35px;
+        text-align: center;
+    }
     .receiptContainer{
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 0fr;
         grid-gap: 1rem;
-        width: 250px;
-        height: 600px;
-    }
-    .yourReceipt{
-        margin-left: 4rem;
-    }
-    .serviceID{
-        margin-left: 1.8rem;
+        margin-left: 5.6rem;
     }
 
 }
