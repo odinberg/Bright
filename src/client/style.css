@@ -590,6 +590,9 @@ button{
       margin-top: 13rem;
     color: #174A5B;
 }
+  .video-container{
+      margin-top: 2rem;
+  }
 .video-container h1{
     height: 1;
     display: flex;
@@ -598,6 +601,7 @@ button{
     margin: 0;
 }
 .video-settings {
+    margin-top: 1rem;
     padding-bottom: 56.25%;
     position: relative;
     height: 0;

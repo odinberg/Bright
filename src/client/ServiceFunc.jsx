@@ -4,8 +4,6 @@ import { ServiceParts } from "./ServiceParts";
 import { Service } from "./service";
 import { Receipt } from "./receipt";
 import { Submit } from "./submit";
-import { Products } from "./Products";
-import { Parts } from "./Parts";
 
 
 /*Functionality for the service */

@@ -8,9 +8,11 @@ import { Parts } from "./Parts";
 
 export const Receipt = () => {
 
+    /* Gets product and part from sessionStorage */
     const obj = JSON.parse(sessionStorage.getItem("myProduct"));
     const obj2 = JSON.parse(sessionStorage.getItem("myPart"));
 
+    /*Makes a random service ID */
     const serviceID  = (length) => {
         let result           = '';
         let characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
@@ -22,7 +24,7 @@ export const Receipt = () => {
         return result;
     }
 
-
+    /*Display for receipt */
   return (
       <div>
           <h1 className="yourReceipt">Your receipt</h1>
