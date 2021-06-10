@@ -34,6 +34,10 @@ html{
     align-items: center;
 
 }
+
+.help-container{
+    margin-top: 7rem;
+}
 /*Header styling*/
 #root>header{
     grid-area:header;
