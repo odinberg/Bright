@@ -26,48 +26,6 @@ html{
 }
 
 
-.receiptContainer {
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    margin-left: 8rem;
-    grid-gap: 5rem;
-}
-.yourReceipt{
-    margin-top: 7rem;
-}
-.receiptProduct{
-    width:240px;
-    height:240px;
-    border:1px solid black;
-    border-radius:35px;
-    overflow:hidden;
-    -webkit-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
-    -moz-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
-    box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
-}
-.receiptProduct > img{
-    width:240px;
-    height:240px;
-}
-.receiptProduct > h1{
-
-}
-.receiptPart{
-    width:240px;
-    height:240px;
-    border:1px solid black;
-    border-radius:35px;
-    overflow:hidden;
-    -webkit-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
-    -moz-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
-    box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
-}
-.receiptPart > img{
-    width:120px;
-    height:120px;
-               }
-
 .mainContainer{
     grid-area:main;
     display: grid;
@@ -459,6 +417,127 @@ button{
     margin-left: 28%;
 }
 
+/* Receipt styling */
+
+.receiptContainer {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-gap: 5rem;
+
+
+}
+.yourReceipt{
+    margin-top: 7rem;
+    margin-left: 2rem;
+}
+.serviceID{
+    margin-left: 2rem;
+}
+.receiptProduct{
+    width:240px;
+    height:240px;
+    border:1px solid black;
+    border-radius:35px;
+    overflow:hidden;
+    -webkit-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+    text-align: center;
+
+}
+.receiptProduct > img{
+    width:200px;
+    height:200px;
+    object-fit: fill;
+}
+.receiptProduct > h2{
+    margin-top: 0.5rem;
+}
+.receiptPart{
+    width:240px;
+    height:240px;
+    border:1px solid black;
+    border-radius:35px;
+    overflow:hidden;
+    -webkit-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+    text-align: center;
+}
+.receiptPart > img{
+    margin-top: 2rem;
+    width:120px;
+    height:120px;
+    object-fit: fill;
+
+}
+.receiptPart > h2{
+    margin-top: 0.5rem;
+
+}
+.receiptContainer {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-gap: 5rem;
+
+
+}
+.yourReceipt{
+    margin-top: 7rem;
+    margin-left: 2rem;
+}
+.serviceID{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.receiptProduct{
+    width:240px;
+    height:240px;
+    border:1px solid black;
+    border-radius:35px;
+    overflow:hidden;
+    -webkit-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+    text-align: center;
+
+}
+.receiptProduct > img{
+    width:200px;
+    height:200px;
+    object-fit: fill;
+}
+.receiptProduct > h2{
+    margin-top: 0.5rem;
+}
+.receiptPart{
+    width:240px;
+    height:240px;
+    border:1px solid black;
+    border-radius:35px;
+    overflow:hidden;
+    -webkit-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+    -moz-box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+    box-shadow:3px 7px 11px -2px rgba(0,0,0,1);
+    text-align: center;
+}
+.receiptPart > img{
+    margin-top: 2rem;
+    width:120px;
+    height:120px;
+    object-fit: fill;
+
+}
+.receiptPart > h2{
+    margin-top: 0.5rem;
+
+}
+
+
 /*Learn styling*/
 .learnStyle{
     height: 250px;
@@ -569,9 +648,6 @@ button{
 /* Styling for grids */
 @media only screen and (max-width: 1200px){
 
-    .productContainer{
-        overflow: hidden;
-    }
     .partsContainer{
         display: grid;
         grid-template-rows: 1fr;
@@ -849,6 +925,19 @@ button{
     }
     .helpBtn{
         right: 1rem;
+    }
+    .receiptContainer{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 0fr;
+        grid-gap: 1rem;
+        width: 250px;
+        height: 600px;
+    }
+    .yourReceipt{
+        margin-left: 4rem;
+    }
+    .serviceID{
+        margin-left: 1.8rem;
     }
 
 }

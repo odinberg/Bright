@@ -16,20 +16,21 @@ export const Receipt = () => {
           <h1 className="yourReceipt">Your receipt</h1>
           <div className="receiptContainer">
         <div className="receiptProduct">
-            <h1>
+            <h2 className="receiptProductTxt">
                 {obj.title}
-            </h1>
+            </h2>
 
             <img src={obj.image}/>
         </div>
         <div className="receiptPart">
-            <h2>
+            <h2 className="receiptPartTxt">
                 {obj2.title}
             </h2>
             <img src={obj2.image}/>
         </div>
 
     </div>
+          <h1 className="serviceID">SERVICE ID : 420</h1>
       </div>
   );
 };
